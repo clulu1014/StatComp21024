@@ -2,7 +2,7 @@
 % Please edit documentation in R/StatCompR.R
 \name{betahatR}
 \alias{betahatR}
-\title{Estimate the coefficients of the NAR(1).}
+\title{Estimate the coefficients of the NAR(1) model.}
 \usage{
 betahatR(Y, X)
 }
@@ -15,7 +15,7 @@ betahatR(Y, X)
 the estimated coefficients vector and a inverse matrix (numeric)
 }
 \description{
-Estimate the coefficients of the NAR(1).
+Estimate the coefficients of the NAR(1) model.
 }
 \examples{
 \dontrun{

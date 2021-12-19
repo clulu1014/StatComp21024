@@ -2,7 +2,7 @@
 % Please edit documentation in R/StatCompR.R
 \name{netA}
 \alias{netA}
-\title{Generate NAR(1) model samples using R.}
+\title{Generate the the network structure matrix A.}
 \usage{
 netA(K, N)
 }
@@ -15,7 +15,7 @@ netA(K, N)
 the network structure matrix A
 }
 \description{
-Generate NAR(1) model samples using R.
+Generate the the network structure matrix A.
 }
 \examples{
 \dontrun{

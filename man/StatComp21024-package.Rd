@@ -3,11 +3,11 @@
 \alias{StatComp21024}
 \docType{package}
 \title{
-  A short title line describing what the package does
+  Use Stochastic Block Model (SBM) to construct network adjacency matrix A and estimate coefficients of NAR(1) model.
 }
 \description{
-  A more detailed description of what the package does. A length
-  of about one to five lines is recommended.
+  Use Stochastic Block Model (SBM) to construct network adjacency matrix A, estimate coefficients of NAR(1) model and simulates two measures to gauge estimators' performances.
+  (\code{netA},\code{obR},\code{betahatR} and \code{RMSE})
 }
 \details{
   This section should provide a more detailed overview of how to use the

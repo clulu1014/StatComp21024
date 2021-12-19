@@ -12,7 +12,7 @@
 
 <meta name="author" content="Lu Cheng" />
 
-<meta name="date" content="2021-12-19" />
+<meta name="date" content="2021-12-20" />
 
 <title>homework_answers</title>
 
@@ -143,7 +143,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <h1 class="title toc-ignore">homework_answers</h1>
 <h4 class="author">Lu Cheng</h4>
-<h4 class="date">2021-12-19</h4>
+<h4 class="date">2021-12-20</h4>
 
 
 
@@ -181,7 +181,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## Warning: 程辑包&#39;xtable&#39;是用R版本4.1.2 来建造的</code></pre>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">xtable</span>(<span class="fu">head</span>(cars)) </span></code></pre></div>
 <pre><code>## % latex table generated in R 4.1.1 by xtable 1.8-4 package
-## % Sun Dec 19 21:53:36 2021
+## % Mon Dec 20 00:13:44 2021
 ## \begin{table}[ht]
 ## \centering
 ## \begin{tabular}{rrr}
@@ -1004,7 +1004,7 @@ Discussion</p>
 <span id="cb91-15"><a href="#cb91-15" aria-hidden="true" tabindex="-1"></a>alpha<span class="ot">&lt;-</span><span class="fl">0.05</span></span>
 <span id="cb91-16"><a href="#cb91-16" aria-hidden="true" tabindex="-1"></a>pow<span class="ot">&lt;-</span> <span class="fu">colMeans</span>(p.values<span class="sc">&lt;</span>alpha)</span>
 <span id="cb91-17"><a href="#cb91-17" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&#39;NN power=&#39;</span>,pow[<span class="dv">1</span>],<span class="st">&#39;Energy power=&#39;</span>,pow[<span class="dv">2</span>],<span class="st">&#39;Ball power=&#39;</span>,pow[<span class="dv">3</span>])</span></code></pre></div>
-<pre><code>## NN power= 0.67 Energy power= 0.66 Ball power= 1</code></pre>
+<pre><code>## NN power= 0.65 Energy power= 0.68 Ball power= 0.99</code></pre>
 <p>Ball test more powerful than NN test and Energy test.<br />
 </p>
 <p><strong>(2) Unequal variance and equal expectations</strong></p>
@@ -1032,7 +1032,7 @@ Discussion</p>
 <span id="cb93-17"><a href="#cb93-17" aria-hidden="true" tabindex="-1"></a>alpha<span class="ot">&lt;-</span><span class="fl">0.05</span></span>
 <span id="cb93-18"><a href="#cb93-18" aria-hidden="true" tabindex="-1"></a>pow<span class="ot">&lt;-</span> <span class="fu">colMeans</span>(p.values<span class="sc">&lt;</span>alpha)</span>
 <span id="cb93-19"><a href="#cb93-19" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&#39;NN power=&#39;</span>,pow[<span class="dv">1</span>],<span class="st">&#39;Energy power=&#39;</span>,pow[<span class="dv">2</span>],<span class="st">&#39;Ball power=&#39;</span>,pow[<span class="dv">3</span>])</span></code></pre></div>
-<pre><code>## NN power= 0.52 Energy power= 0.85 Ball power= 0.87</code></pre>
+<pre><code>## NN power= 0.4 Energy power= 0.8 Ball power= 0.77</code></pre>
 <p>The performance of Ball and Energy test is better than NN test, and Energy power is the highest.<br />
 </p>
 <p><strong>(3) Non-normal distributions: </strong></p>
@@ -1050,7 +1050,7 @@ Discussion</p>
 <span id="cb95-11"><a href="#cb95-11" aria-hidden="true" tabindex="-1"></a>alpha<span class="ot">&lt;-</span><span class="fl">0.05</span></span>
 <span id="cb95-12"><a href="#cb95-12" aria-hidden="true" tabindex="-1"></a>pow<span class="ot">&lt;-</span> <span class="fu">colMeans</span>(p.values<span class="sc">&lt;</span>alpha)</span>
 <span id="cb95-13"><a href="#cb95-13" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&#39;NN power=&#39;</span>,pow[<span class="dv">1</span>],<span class="st">&#39;Energy power=&#39;</span>,pow[<span class="dv">2</span>],<span class="st">&#39;Ball power=&#39;</span>,pow[<span class="dv">3</span>])</span></code></pre></div>
-<pre><code>## NN power= 0.54 Energy power= 0.44 Ball power= 0.63</code></pre>
+<pre><code>## NN power= 0.51 Energy power= 0.46 Ball power= 0.67</code></pre>
 <p><br />
 <strong>(ii) bimodel distribution(mixture of two normal distributions)</strong></p>
 <p><span class="math display">\[x_{32}\sim \varepsilon_1N(\left(\matrix{0\\
@@ -1082,7 +1082,7 @@ Discussion</p>
 <span id="cb97-16"><a href="#cb97-16" aria-hidden="true" tabindex="-1"></a>alpha<span class="ot">&lt;-</span><span class="fl">0.05</span></span>
 <span id="cb97-17"><a href="#cb97-17" aria-hidden="true" tabindex="-1"></a>pow<span class="ot">&lt;-</span> <span class="fu">colMeans</span>(p.values<span class="sc">&lt;</span>alpha)</span>
 <span id="cb97-18"><a href="#cb97-18" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&#39;NN power=&#39;</span>,pow[<span class="dv">1</span>],<span class="st">&#39;Energy power=&#39;</span>,pow[<span class="dv">2</span>],<span class="st">&#39;Ball power=&#39;</span>,pow[<span class="dv">3</span>])</span></code></pre></div>
-<pre><code>## NN power= 0.74 Energy power= 0.99 Ball power= 0.96</code></pre>
+<pre><code>## NN power= 0.77 Energy power= 0.95 Ball power= 0.95</code></pre>
 <p>The Ball power is the highest so Ball test is the best.<br />
 </p>
 <p><strong>(4) Unbalanced samples</strong> <span class="math display">\[x_4\sim N(\left(\matrix{0\\
@@ -1108,7 +1108,7 @@ Discussion</p>
 <span id="cb99-15"><a href="#cb99-15" aria-hidden="true" tabindex="-1"></a>alpha<span class="ot">&lt;-</span><span class="fl">0.05</span></span>
 <span id="cb99-16"><a href="#cb99-16" aria-hidden="true" tabindex="-1"></a>pow<span class="ot">&lt;-</span> <span class="fu">colMeans</span>(p.values<span class="sc">&lt;</span>alpha)</span>
 <span id="cb99-17"><a href="#cb99-17" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&#39;NN power=&#39;</span>,pow[<span class="dv">1</span>],<span class="st">&#39;Energy power=&#39;</span>,pow[<span class="dv">2</span>],<span class="st">&#39;Ball power=&#39;</span>,pow[<span class="dv">3</span>])</span></code></pre></div>
-<pre><code>## NN power= 0.14 Energy power= 0.26 Ball power= 0.68</code></pre>
+<pre><code>## NN power= 0.16 Energy power= 0.18 Ball power= 0.73</code></pre>
 <p>The NN power is the lowest and Ball test still has the highest power.</p>
 </div>
 <div id="section-7" class="section level2">
@@ -1810,7 +1810,7 @@ By the conditions from the question:</p>
 <span id="cb144-3"><a href="#cb144-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sourceCpp</span>(<span class="fu">paste0</span>(dir_cpp,<span class="st">&quot;GibbsC.cpp&quot;</span>)) </span></code></pre></div>
 <pre><code>## Warning in normalizePath(path.expand(path), winslash, mustWork): path[1]=&quot;C:/
 ## Users/lenovo/Desktop/R/StatComp/StatComp21024/src/../inst/include&quot;: 系统找不到指
-## 定的路径。</code></pre>
+## 定的文件。</code></pre>
 <div class="sourceCode" id="cb146"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1" aria-hidden="true" tabindex="-1"></a><span class="co"># qqplots of x and y</span></span>
 <span id="cb146-2"><a href="#cb146-2" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(<span class="fu">chain</span>(<span class="dv">5000</span>)[,<span class="dv">1</span>],<span class="fu">GibbsC</span>(<span class="dv">5000</span>)[,<span class="dv">1</span>],<span class="at">main=</span><span class="st">&#39;qqplot of x&#39;</span>)</span></code></pre></div>
 <p><img src="data:image/png;base64,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" /><!-- --></p>
@@ -1828,9 +1828,9 @@ By the conditions from the question:</p>
 <div class="sourceCode" id="cb150"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb150-1"><a href="#cb150-1" aria-hidden="true" tabindex="-1"></a>N<span class="ot">&lt;-</span> <span class="fl">1e5</span></span>
 <span id="cb150-2"><a href="#cb150-2" aria-hidden="true" tabindex="-1"></a>ts <span class="ot">&lt;-</span> <span class="fu">microbenchmark</span>(chain1<span class="ot">&lt;-</span> <span class="fu">chain</span>(N),chain2<span class="ot">&lt;-</span> <span class="fu">GibbsC</span>(N))</span>
 <span id="cb150-3"><a href="#cb150-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(ts)</span></code></pre></div>
-<pre><code>##                  expr      min       lq      mean    median       uq       max
-## 1  chain1 &lt;- chain(N) 575.9574 606.6401 665.36067 619.97230 677.0606 1154.0765
-## 2 chain2 &lt;- GibbsC(N)  42.1628  42.7785  46.21993  43.69055  46.6426   70.8425
+<pre><code>##                  expr      min        lq      mean   median        uq       max
+## 1  chain1 &lt;- chain(N) 740.6607 809.45140 906.21758 851.0127 951.46835 1579.5916
+## 2 chain2 &lt;- GibbsC(N)  47.0768  52.74125  59.89665  56.4522  63.77815  140.7369
 ##   neval
 ## 1   100
 ## 2   100</code></pre>

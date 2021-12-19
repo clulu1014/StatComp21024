@@ -2,7 +2,7 @@
 % Please edit documentation in R/StatCompR.R
 \name{obR}
 \alias{obR}
-\title{generate the sample Y_t}
+\title{Generate the sample Y_t of NAR(1) model.}
 \usage{
 obR(A, beta, T)
 }
@@ -17,7 +17,7 @@ obR(A, beta, T)
 the sample list of (X,Y) (numeric)
 }
 \description{
-generate the sample Y_t
+Generate the sample Y_t of NAR(1) model.
 }
 \examples{
 \dontrun{
