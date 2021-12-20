@@ -782,9 +782,9 @@ sum.k<- function(a,d,M){
 ## -----------------------------------------------------------------------------
 a<- matrix(c(1,2),2,1)
 d<- 100
-M1<- 10000
-M2<- 1000
-cat('repeat 1000 times，sum=',sum.k(a,d,M2),'repeat 10000 times，sum=',sum.k(a,d,M1))
+M1<- 1000
+M2<- 2000
+cat('repeat 1000 times，sum=',sum.k(a,d,M2),'repeat 2000 times，sum=',sum.k(a,d,M1))
 
 ## -----------------------------------------------------------------------------
 k0<- c(4:25,100,500,1000)
@@ -843,7 +843,7 @@ lam.gs<- 1/iden(x.ob,1)*sum(x.ob)
 
 ## -----------------------------------------------------------------------------
 # Use the EM algorithm to iterate out the value of lambda
-m<- 10000
+m<- 1000
 lambda0<- 1
 tol<- .Machine$double.eps^0.5
 lam.EM<- lambda0+1
@@ -959,7 +959,7 @@ vapply(iris[(vapply(iris,class,character(1))=='numeric')], sd,FUN.VALUE=c(1))
 #    return mat;
 #  }
 
-## -----------------------------------------------------------------------------
+## ----eval=TRUE----------------------------------------------------------------
 set.seed(1202)
 # use R
 chain<- function(N){
@@ -980,22 +980,17 @@ return(Z)
 }
 
 library(Rcpp)
-dir_cpp <- 'C:/Users/lenovo/Desktop/R/StatComp/StatComp21024/src/'
-# Can create source file in Rstudio
-sourceCpp(paste0(dir_cpp,"GibbsC.cpp")) 
+library(StatComp21024) 
 
-# qqplots of x and y
-qqplot(chain(5000)[,1],GibbsC(5000)[,1],main='qqplot of x')
-qqplot(chain(5000)[,2],GibbsC(5000)[,2],main='qqplot of y')
+#qqplots of x and y
+qqplot(chain(500)[,1],GibbsC(500)[,1],main='qqplot of x')
+qqplot(chain(500)[,2],GibbsC(500)[,2],main='qqplot of y')
 
-## -----------------------------------------------------------------------------
+## ----eval=TRUE----------------------------------------------------------------
 set.seed(1202)
-library(Rcpp)
-dir_cpp <- 'C:/Users/lenovo/Desktop/R/StatComp/StatComp21024/src/'
-# Can create source file in Rstudio
-sourceCpp(paste0(dir_cpp,"GibbsC.cpp")) 
 library(microbenchmark)
-N<- 1e5
+library(StatComp21024) 
+N<- 500
 ts <- microbenchmark(chain1<- chain(N),chain2<- GibbsC(N))
 summary(ts)
 
